@@ -12,9 +12,9 @@ import silkImg from "@/assets/silk.png";
 import linenImg from "@/assets/linen.png";
 
 const services = [
-  { id: "womens-dress", name: "Women's Dress", price: 1200, icon: "👗" },
-  { id: "blouse", name: "Blouse", price: 600, icon: "👚" },
-  { id: "lehenga", name: "Lehenga", price: 2000, icon: "✨" },
+  { id: "womens-dress", name: "Women's Dress", price: 300, icon: "👗" },
+  { id: "blouse", name: "Blouse", price: 300, icon: "👚" },
+  { id: "lehenga", name: "Lehenga Choli", price: 500, icon: "✨" },
 ];
 
 const fabrics = [
@@ -55,6 +55,14 @@ const Services = () => {
   const selectedFabricData = fabrics.find(f => f.id === selectedFabric);
 
   const handleProceed = async () => {
+    if (!contactInfo.name || !contactInfo.phone) {
+      toast({
+        title: "Required Fields",
+        description: "Please enter your name and phone number to book.",
+        variant: "destructive",
+      });
+      return;
+    }
     setIsSubmitting(true);
 
     const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdWdV71WZnO631ioUjLNaAXDPXGtCezOUFHPIA0tSnPp8bTvg/formResponse";

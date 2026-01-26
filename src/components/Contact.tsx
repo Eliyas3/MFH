@@ -179,7 +179,7 @@ const Contact = () => {
                         <SelectItem value="mens-suit" className="font-poppins">Men's Premium Suit</SelectItem>
                         <SelectItem value="womens-dress" className="font-poppins">Women's Designer Dress</SelectItem>
                         <SelectItem value="blouse" className="font-poppins">Signature Blouse</SelectItem>
-                        <SelectItem value="lehenga" className="font-poppins">Bridal Lehenga</SelectItem>
+                        <SelectItem value="lehenga" className="font-poppins">Lehenga Choli</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
