@@ -78,14 +78,9 @@ const Contact = () => {
                     <div>
                       <h3 className="font-playfair font-bold text-xl mb-1">Call Us</h3>
                       <p className="text-sm text-muted-foreground font-poppins mb-2 text-balance">Direct line for immediate inquiries</p>
-                      <div className="flex flex-col gap-1">
-                        <a href="tel:+919346451494" className="text-primary font-bold font-poppins text-lg hover:underline">
-                          +91 93464 51494
-                        </a>
-                        <a href="tel:+917337503586" className="text-primary font-bold font-poppins text-lg hover:underline">
-                          +91 73375 03586
-                        </a>
-                      </div>
+                      <a href="tel:+917337503586" className="text-primary font-bold font-poppins text-lg hover:underline">
+                        +91 73375 03586
+                      </a>
                     </div>
                   </div>
                 </Card>
